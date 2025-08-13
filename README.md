@@ -1,61 +1,60 @@
-# **Admin Panel for PakoBlog**
+# Admin PakoBlog — Admin Panel
 
-This project is the administration system for the **PakoBlog** application. It provides a web-based interface for managing blog content, users, and other administrative tasks.
+The **Admin PakoBlog** project is an ASP.NET Core–based admin panel for managing posts, categories, tags, users, and media content for PakoBlog.
 
-## **✨ Features**
+> This README provides quick setup instructions, development environment guidelines, and contribution notes. Update it as your repository evolves.
 
-* **Blog Post Management**: Create, edit, and delete blog posts.  
-* **Dashboard**: A central dashboard to get an overview of blog activity.  
-* **Responsive Design**: Accessible on both desktop and mobile devices.
+---
 
-## **🛠️ Technologies**
+## 🚀 Features
 
-* **Backend**: C\# with ASP.NET Core MVC  
-* **Frontend**: HTML, CSS, JavaScript  
-* **Database**: Entity Framework Core for data management  
-* **Framework**: .NET
+- **Post Management:** Create/edit/delete posts, manage draft & published states, schedule publishing.
+- **Categories & Tags:** Hierarchical categories and multiple tags.
+- **Media Library:** Upload, rename, and associate images/files.
+- **User & Role Management:** Admin/Editor/Author roles (extensible); password reset.
+- **Comment Moderation:** Approve, hide, delete; mark as spam (optional).
+- **Search & Filtering:** Filter by title, status, date, and author.
 
-## **🚀 Getting Started**
+---
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## 📦 Installation
 
-### **Prerequisites**
-
-* [.NET SDK](https://dotnet.microsoft.com/download) (Version 6.0 or higher is recommended)  
-* A code editor like [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio](https://visualstudio.microsoft.com/)
-
-### **Installation**
-
-1. **Clone the repository**:  
-   git clone https://github.com/UmtiPako/Admin\_PakoBlog-for-PakoBlog.git  
-   cd Admin\_PakoBlog-for-PakoBlog
-
-2. Restore dependencies:  
-   Open the terminal in the project directory and run:  
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UmtiPako/Admin_PakoBlog-for-PakoBlog.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd Admin_PakoBlog-for-PakoBlog
+   ```
+3. Restore dependencies:
+   ```bash
    dotnet restore
-
-3. Update the database:  
-   This project uses Entity Framework Core for the database. To apply the latest migrations and create the database, run the following commands:  
+   ```
+4. Update the `appsettings.json` with your database connection string.
+5. Run migrations:
+   ```bash
    dotnet ef database update
-
-4. Configure appsettings.json:  
-   Update your database connection string in the appsettings.json file.  
-   "ConnectionStrings": {  
-     "DefaultConnection": "Server=(localdb)\\\\mssqllocaldb;Database=PakoBlogDb;Trusted\_Connection=True;MultipleActiveResultSets=true"  
-   }
-
-### **Running the Application**
-
-1. **Run the project from the terminal**:  
+   ```
+6. Start the application:
+   ```bash
    dotnet run
+   ```
 
-2. Access the application:  
-   Open your web browser and navigate to the URL provided in the terminal (e.g., https://localhost:7001).
+---
 
-## **🤝 Contributing**
+## 🛠 Technologies
 
-Contributions, issues, and feature requests are welcome\! Feel free to check the [issues page](https://www.google.com/search?q=https://github.com/UmtiPako/Admin_PakoBlog-for-PakoBlog/issues).
+- **ASP.NET Core MVC**
+- **Entity Framework Core**
+- **Bootstrap** for UI styling
+- **SQL Server** (configurable)
 
-## **📄 License**
+---
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
