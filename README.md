@@ -5,8 +5,6 @@ This project is the administration system for the **PakoBlog** application. It p
 ## **✨ Features**
 
 * **Blog Post Management**: Create, edit, and delete blog posts.  
-* **User Management**: Manage user accounts and roles.  
-* **Comment Moderation**: Approve or remove comments on blog posts.  
 * **Dashboard**: A central dashboard to get an overview of blog activity.  
 * **Responsive Design**: Accessible on both desktop and mobile devices.
 
