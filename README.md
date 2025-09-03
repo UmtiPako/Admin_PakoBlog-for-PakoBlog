@@ -2,8 +2,6 @@
 
 The **Admin PakoBlog** project is an ASP.NET Core–based admin panel for managing posts, categories, tags, users, and media content for PakoBlog.
 
-> This README provides quick setup instructions, development environment guidelines, and contribution notes. Update it as your repository evolves.
-
 ---
 
 ## 🚀 Features
